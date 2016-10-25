@@ -15,8 +15,7 @@ header.site-header > .row:last-of-type {
     height: 2.78571rem;
 }
 
-#container {
-    /*height: 100%;*/
+main {
     position: absolute;
     top: 78px;
     right: 0;
@@ -76,16 +75,20 @@ a.topic-header:hover {
     vertical-align: top;
 }
 
+#map-panel {
+  height: 100%;
+}
+
 #map {
-    height: 100%;
+  height: 100%;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }

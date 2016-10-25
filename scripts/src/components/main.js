@@ -14,11 +14,10 @@ const topics = [
 export default class Main extends React.Component {
 	render() {
 		return (
-			<main>
+			<main className="row collapse">
 				<TopicPanel id="topic-panel" topics={topics}/>
 				<MapPanel id="map-panel" />
 			</main>
 		)
 	}
 }
-

@@ -15,7 +15,7 @@ export default class TopicPanel extends React.Component {
 	render() {
 		const topics = this.props.topics
 		return (
-			<div id="topic-panel">
+			<div id="topic-panel" className="large-12 columns">
 				<h1>1234 MARKET ST</h1>
 
  				{topics.map((topic) => {
