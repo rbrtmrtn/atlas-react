@@ -11,7 +11,7 @@ export default class TopicPanel extends React.Component {
 	handleTopicChange(newTopic) {
 		this.setState({activeTopic: newTopic})
 	}
-	
+
 	render() {
 		const topics = this.props.topics
 		return (
@@ -19,8 +19,8 @@ export default class TopicPanel extends React.Component {
 				<h1>1234 MARKET ST</h1>
 
  				{topics.map((topic) => {
- 					return <Topic name={topic} 
- 								  active={this.state.activeTopic === topic} 
+ 					return <Topic name={topic}
+ 								  active={this.state.activeTopic === topic}
  								  didClickTopic={this.handleTopicChange}
  						   />
  				})}

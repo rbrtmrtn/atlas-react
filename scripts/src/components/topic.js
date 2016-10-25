@@ -32,7 +32,7 @@ export class TopicBody extends React.Component {
 	render() {
 		return (
 			// set classname conditionally based on parent's state
-			<div className={this.props.active ? "topic-body" : "topic-body hidden"}>Lots of data here</div>
+			<div className={this.props.active ? "topic-body" : "topic-body hidden"}>Data goes here</div>
 		)
 	}
 }
