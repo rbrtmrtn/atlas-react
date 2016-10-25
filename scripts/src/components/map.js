@@ -1,5 +1,6 @@
 import React from 'react'
-import { Map, TileLayer } from 'react-leaflet'
+import { Map, BaseTileLayer } from 'react-leaflet'
+import { TiledMapLayer } from 'esri-leaflet'
 
 const position = [51.505, -0.09]
 
@@ -16,9 +17,9 @@ export default class MapView extends React.Component {
 	}
 }
 
-// TEST: does the old map stuff work?
-// export default class MapView extends React.Component {
-// 	render() {
-// 		return (<div>Hi im a map</div>)
-// 	}
+// see https://github.com/Charmatzis/react-leaflet-google for example
+// class EsriTileLayer extends BaseTileLayer {
+// 	super.componentWillMount()
+// 	this.props = {}
+//  this.leafletElement = new TiledMapLayer();
 // }
