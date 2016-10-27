@@ -4,7 +4,8 @@ export default {
   topics: [
     {
       name: 'Basic Info',
-      // stateObj: 'ais',
+      // url: ''
+      // stateKey: 'ais',
       // fields: [
       //   {
       //     label: 'Street Code',

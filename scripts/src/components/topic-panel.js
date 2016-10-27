@@ -5,7 +5,7 @@ import { app } from '../index.js'
 export default class TopicPanel extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = {activeTopic: '311'}
+		this.state = {activeTopic: 'Basic Info'}
 		this.handleTopicChange = this.handleTopicChange.bind(this)
 	}
 

@@ -1,5 +1,6 @@
 import React from 'react'
-import { app } from '../index'
+import app from '../app'
+import { handleApiResponse } from '../actions'
 
 console.log('app search', app)
 
@@ -16,8 +17,7 @@ export default class Header extends React.Component {
   didSearch() {
     const val = document.getElementById('search-input').value,
           url = `https://api.phila.gov/ais/v1/addresses/${val}?include_units=&opa_only=&gatekeeperKey=${app.config.gatekeeperKey}`
-    $.get(url, (data) => {
-      console.log('ais', data);
-    });
+		
+    $.get(url, (data) => app.store.dispatch(handleApiResponse('ais', data)))
   }
 }
