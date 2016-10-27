@@ -1,8 +1,11 @@
 import React from 'react'
-import { Map, BaseTileLayer } from 'react-leaflet'
-import { TiledMapLayer } from 'esri-leaflet'
+import { Map, TileLayer } from 'react-leaflet'
 
-const position = [51.505, -0.09]
+// TODO: this map is just a placeholder. make a real map. good references:
+// - https://github.com/socialradar/react-esri-map
+// - https://github.com/Charmatzis/react-leaflet-google
+
+const position = [39.952448, -75.163594]
 
 export default class MapView extends React.Component {
 	render() {
@@ -16,10 +19,3 @@ export default class MapView extends React.Component {
 		)
 	}
 }
-
-// see https://github.com/Charmatzis/react-leaflet-google for example
-// class EsriTileLayer extends BaseTileLayer {
-// 	super.componentWillMount()
-// 	this.props = {}
-//  this.leafletElement = new TiledMapLayer();
-// }

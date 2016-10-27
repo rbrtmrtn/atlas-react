@@ -1,4 +1,5 @@
 import React from 'react'
+import SearchContainer from './search'
 
 export default class Header extends React.Component {
 	render() {
@@ -14,10 +15,7 @@ export default class Header extends React.Component {
 	              <h1 className="page-title">Atlas</h1>
 	            </a>
 	          </div>
-	          <div id="search-container">
-	            <input type="text" placeholder="Which address are you looking for?" id="search-input" />
-	            <a href="#" id="search-button" className="button no-margin">Go</a>
-	          </div>
+	          <SearchContainer />
 	        </div>
 	      </div>
 	    </header>

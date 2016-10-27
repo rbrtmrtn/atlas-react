@@ -1,5 +1,6 @@
 import React from 'react'
 import Topic from './topic'
+import { app } from '../index.js'
 
 export default class TopicPanel extends React.Component {
 	constructor(props) {
